@@ -10,7 +10,11 @@ export const router = Router();
 
 router.post("/product", ProductsController.create);
 
-router.post("/category", CategoriesController.create);
+router.post(
+  "/category",
+  CategoriesController.createValidation,
+  CategoriesController.create
+);
 router.get("/category", CategoriesController.getAll);
 router.get("/category/:id", CategoriesController.getCategoryById);
 

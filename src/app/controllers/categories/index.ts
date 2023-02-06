@@ -1,9 +1,11 @@
 import * as create from "./Create";
 import * as getAll from "./GetAll";
-import * as getCategoryById from "./getCategoryById";
+import * as getById from "./getById";
+import * as deleteById from "./DeleteById";
 
 export const CategoriesController = {
   ...create,
   ...getAll,
-  ...getCategoryById,
+  ...getById,
+  ...deleteById,
 };
